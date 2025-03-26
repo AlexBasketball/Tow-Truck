@@ -54,6 +54,55 @@ img {
   max-width: 100%;
 }
 
+.refresh {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 90%;
+  right: 5%;
+  z-index: 100;
+  background: transparent;
+  cursor: pointer;
+  transform: rotate(-90deg);
+}
+
+.refresh svg > path {
+  transition: stroke 0.3s ease;
+}
+
+.refresh svg > circle {
+  transition: stroke 0.3s ease;
+}
+
+.refresh svg > path {
+  transition: stroke 0.3s ease;
+}
+
+.refresh svg > circle {
+  transition: stroke 0.3s ease;
+}
+
+.refresh:hover svg path,
+.refresh:hover svg circle,
+.refresh:hover svg path,
+.refresh:hover svg circle {
+  stroke: #111827;
+}
+
+.refresh:focus svg path,
+.refresh:focus svg circle,
+.refresh:focus svg path,
+.refresh:focus svg circle {
+  stroke: rgba(17, 24, 39, 0.6);
+}
+
+.refresh:active svg path,
+.refresh:active svg circle,
+.refresh:active svg path,
+.refresh:active svg circle {
+  stroke: #111827;
+}
+
 /*320px*/
 /*Header*/
 .header {
