@@ -55,4 +55,21 @@ document.addEventListener("DOMContentLoaded", () => {
       delay: 4000,
     },
   });
+
+  ymaps.ready(init);
+  function init() {
+    let myMap = new ymaps.Map("map", {
+      center: [55.81435, 37.081548],
+      zoom: 10,
+    });
+
+    let myPlacemark = new ymaps.GeoObject({
+      geometry: {
+        type: "Point",
+        coordinates: [55.820405, 37.085833],
+      },
+    });
+
+    myMap.geoObjects.add(myPlacemark);
+  }
 });
